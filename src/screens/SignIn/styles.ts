@@ -10,6 +10,7 @@ export const Container = styled.KeyboardAvoidingView`
   align-items: center;
   justify-content: center;
 `
+
 export const Logo = styled.Image`
   margin-bottom: 25px;
 `
@@ -26,4 +27,28 @@ export const Input = styled.TextInput`
   border-radius: 8px;
   color: #121212;
   margin-bottom: 15px;
+`
+
+export const SubmitButton = styled.TouchableOpacity`
+  width: 90%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #3b3dbf;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+`
+
+export const SubmitText = styled.Text`
+  font-size: 20px;
+  color: #fff;
+`
+
+export const Link = styled.TouchableOpacity`
+  margin-top: 10px;
+  margin-bottom: 10px;
+`
+
+export const LinkText = styled.Text`
+  color: #171717;
 `
