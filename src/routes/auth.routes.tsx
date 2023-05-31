@@ -14,7 +14,18 @@ const AuthRoutes = () => {
         component={SignIn}
         options={{ headerShown: false }}
       />
-      <Screen name="SignUp" component={SignUp} />
+      <Screen
+        name="SignUp"
+        component={SignUp}
+        options={{
+          headerStyle: {
+            backgroundColor: '#3b3dbf',
+          },
+          headerTintColor: '#fff',
+          headerTitle: 'Voltar',
+          headerBackTitleVisible: false,
+        }}
+      />
     </Navigator>
   )
 }

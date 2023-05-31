@@ -5,7 +5,10 @@ import { useNavigation } from '@react-navigation/native'
 import * as Styled from './styles'
 
 const SignIn = () => {
-  const navigation = useNavigation()
+  const { navigate } = useNavigation()
+
+  const handleClick = () => navigate('SignUp')
+
   return (
     <Styled.Background>
       <Styled.Container
@@ -26,7 +29,7 @@ const SignIn = () => {
           <Styled.SubmitText>Acessar</Styled.SubmitText>
         </Styled.SubmitButton>
 
-        <Styled.Link onPress={() => navigation.navigate('SignUp')}>
+        <Styled.Link onPress={handleClick}>
           <Styled.LinkText>Criar uma conta</Styled.LinkText>
         </Styled.Link>
       </Styled.Container>
